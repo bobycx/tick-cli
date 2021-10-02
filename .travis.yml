@@ -1,8 +1,6 @@
 language: go
 
 go:
-- 1.x
 - 1.17
-- master
 
 script: go build .\cmd\tick

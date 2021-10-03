@@ -14,6 +14,7 @@ import (
 	"github.com/mattn/go-tty"
 )
 
+var screenWidth, screenHeight = screen.Size()
 var pause = false
 var asciiNums = [11]string{
 
@@ -156,12 +157,32 @@ func asciiConcat(strArray []string, separator string) string {
 	var linesArray [][]string
 	var finalResult []string
 
+	// calculate vertical and horizontal padding needed to center display
+	w, h := screen.Size()
+	if w != screenWidth {
+		screenWidth = (w - 54) / 2
+		screen.Clear()
+	} else {
+		screenWidth = (screenWidth - 54) / 2
+	}
+
+	if h != screenHeight {
+		screenHeight = (h - 11) / 2
+		screen.Clear()
+	} else {
+		screenHeight = (screenHeight - 11) / 2
+	}
+
+	// append vertical padding
+	finalResult = append(finalResult, strings.Repeat("\n", screenHeight))
+
 	for i := 0; i < len(strArray); i++ {
 		linesArray = append(linesArray, strings.Split(strArray[i], "\n"))
 	}
 
 	for i := 0; i < 7; i++ {
-		var strLine = ""
+		// add horizontal padding
+		var strLine = strings.Repeat(" ", screenWidth)
 		for m := 0; m < len(linesArray); m++ {
 			strLine += linesArray[m][i]
 			strLine += separator

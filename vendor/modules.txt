@@ -7,6 +7,8 @@ github.com/mattn/go-isatty
 # github.com/mattn/go-tty v0.0.3
 ## explicit; go 1.14
 github.com/mattn/go-tty
+# github.com/olekukonko/ts v0.0.0-20171002115256-78ecb04241c0
+## explicit
 # golang.org/x/crypto v0.0.0-20210921155107-089bfa567519
 ## explicit; go 1.17
 golang.org/x/crypto/ssh/terminal

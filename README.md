@@ -16,13 +16,15 @@ go install github.com/bobsyc/tick-cli@latest
 
 Start tick cli by running `tick` . Press 'p' to pause and ctrl-c to quit (you can expect features like a timer mode)
 
-
+<br />
+<br />
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/48749918/135735912-5a37ab85-2fe6-4697-8916-5130112f4e7f.png"/>
-  <hr />
+ <hr />
+</p>
   
-  
+<p align="center">
  <img src="https://media.giphy.com/media/oGZ0iUQRnn0fa170Pw/giphy.gif"/>
 
 </p>

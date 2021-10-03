@@ -1,6 +1,6 @@
 # Tick CLI
 
-![Travis (.com)](https://img.shields.io/travis/com/bobsyc/tick-cli?logo=travis&style=for-the-badge) ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/bobsyc/tick-cli?logo=go&style=for-the-badge)![GitHub](https://img.shields.io/github/license/bobsyc/tick-cli?style=for-the-badge)
+![Travis (.com)](https://img.shields.io/travis/com/bobsyc/tick-cli?logo=travis&style=for-the-badge) ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/bobsyc/tick-cli?logo=go&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/bobsyc/tick-cli?style=for-the-badge)
 
 A cross-platform, lightweight stopwatch cli written in go
 

@@ -11,7 +11,7 @@ Note: Project is extremely premature. First go project so the code is pretty bad
 Download **[Go](https://golang.org/dl/)** if you haven't already ~
 
 ```shell
-go install github.com/bobsyc/tick-cli@latest
+go install github.com/bobsyc/tick-cli
 ```
 
 Start tick cli by running `tick` . Press 'p' to pause and ctrl-c to quit (you can expect features like a timer mode)

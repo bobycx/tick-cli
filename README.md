@@ -31,4 +31,8 @@ Start tick cli by running `tick-cli` (you can navigate to the binary path by run
 </p>
 
 
+## License 
+This project, ThePontifex, is under an MIT license. See [LICENSE](https://github.com/bobsyc/tick-cli/blob/master/LICENSE) for more information.
+
+
 

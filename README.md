@@ -14,7 +14,7 @@ Download **[Go](https://golang.org/dl/)** if you haven't already ~
 go install github.com/bobsyc/tick-cli
 ```
 
-Start tick cli by running `tick` . Press 'p' to pause and ctrl-c to quit (you can expect features like a timer mode)
+Start tick cli by running `tick-cli` (you can change the executable name by running `go env GOPATH` and navigating to the bin directory in it) . Press 'p' to pause and ctrl-c to quit (you can expect features like a timer mode)
 
 <br />
 <br />

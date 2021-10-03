@@ -20,12 +20,12 @@ Start tick cli by running `tick-cli` (you can change the executable name by runn
 <br />
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/48749918/135735912-5a37ab85-2fe6-4697-8916-5130112f4e7f.png"/>
+ <img src="https://user-images.githubusercontent.com/48749918/135762549-49864ccd-7b24-47b6-a28c-3d65e89396a8.png"/>
  <hr />
 </p>
-  
+
 <p align="center">
- <img src="https://media.giphy.com/media/oGZ0iUQRnn0fa170Pw/giphy.gif"/>
+ <img src="https://user-images.githubusercontent.com/48749918/135762642-bd2fd30d-752b-465d-9ddc-301ea013ae1a.mp4"/>
 
 </p>
 

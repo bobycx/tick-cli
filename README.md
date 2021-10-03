@@ -25,7 +25,7 @@ Start tick cli by running `tick-cli` (you can change the executable name by runn
 </p>
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/48749918/135762700-315a7f98-9453-4a0a-b2c6-270540f35b75.gif"/>
+ <img src="https://media.giphy.com/media/st0dRBvRuMqcrZp7ye/giphy.gif"/>
 
 </p>
 

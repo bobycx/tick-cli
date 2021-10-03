@@ -1,4 +1,4 @@
-module tick-cli
+module github.com/bobsyc/tick-cli
 
 go 1.17
 

@@ -1,4 +1,4 @@
-module tick
+module tick-cli
 
 go 1.17
 

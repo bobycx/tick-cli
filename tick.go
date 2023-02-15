@@ -196,7 +196,7 @@ func asciiConcat(strArray []string, separator string) string {
 
 }
 
-func detectPause() {
+func detectKey() {
 	tty, err := tty.Open()
 	if err != nil {
 		log.Fatal(err)
@@ -214,7 +214,9 @@ func detectPause() {
 			} else {
 				pause = true
 			}
-
+		} else if r == 'q' {
+			screen.MoveTopLeft()
+			os.Exit(0)
 		}
 	}
 }
@@ -238,10 +240,11 @@ func main() {
 	fmt.Print("\033[?25l")
 
 	screen.Clear()
-	go detectPause()
+	go detectKey()
 	catchSignal()
 
 	for {
+
 		for pause != true {
 
 			if seconds == 60 {

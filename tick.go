@@ -16,6 +16,10 @@ import (
 
 var screenWidth, screenHeight = screen.Size()
 var pause = false
+
+var stopwatch = false 
+var timer = false 
+
 var asciiNums = [11]string{
 
 	`
@@ -232,36 +236,46 @@ func catchSignal() {
 
 func main() {
 
-	var hours = 00
-	var minutes = 00
-	var seconds = 00
+	args := os.Args[1:]
 
-	// hides the console cursor
-	fmt.Print("\033[?25l")
-
-	screen.Clear()
-	go detectKey()
-	catchSignal()
-
-	for {
-
-		for pause != true {
-
-			if seconds == 60 {
-				seconds = 0
-				minutes += 1
-			}
-
-			if minutes == 60 {
-				minutes = 0
-				hours += 1
-			}
-			screen.MoveTopLeft()
-			fmt.Printf("\r%s", asciiConcat(formatter(hours, minutes, seconds), "  "))
-			seconds += 1
-
-			time.Sleep(time.Second)
-		}
+	if args[0] == "-s" {
+		stopwatch = true 
+	} else if args[1] == "-t" {
+		timer = true 
 	}
 
+	if stopwatch == true {
+		var hours = 00
+		var minutes = 00
+		var seconds = 00
+
+		// hides the console cursor
+		fmt.Print("\033[?25l")
+
+		screen.Clear()
+		go detectKey()
+		catchSignal()
+
+		for {
+
+			for pause != true {
+
+				if seconds == 60 {
+					seconds = 0
+					minutes += 1
+				}
+
+				if minutes == 60 {
+					minutes = 0
+					hours += 1
+				}
+				screen.MoveTopLeft()
+				fmt.Printf("\r%s", asciiConcat(formatter(hours, minutes, seconds), "  "))
+				seconds += 1
+
+				time.Sleep(time.Second)
+			}
+		}
+	}
+	
 }
